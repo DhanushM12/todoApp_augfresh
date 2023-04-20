@@ -1,5 +1,6 @@
 import '../App.css';
 import React, {useState} from 'react'
+import TodoMain from './TodoMain';
 
 function App() {
   let time = new Date().toLocaleTimeString()
@@ -14,6 +15,7 @@ function App() {
     <div className='App'>
       <h1>Todo App</h1>
       <h2>{ currentTime }</h2>
+      <TodoMain />
     </div>
   )
 }
